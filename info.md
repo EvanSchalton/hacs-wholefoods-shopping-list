@@ -1,21 +1,28 @@
 # Whole Foods Shopping List
 
-This is a custom integration for Home Assistant that allows you to manage a shopping list specifically for Whole Foods. You can add items with product names, product numbers, and images, and filter them by labels.
+This integration allows you to manage a shopping list specifically for Whole Foods.
+
+## Features
+
+- Add items with product names, product numbers, images, and labels.
+- Remove items from the catalog.
+- Display catalog items in a Lovelace card.
+- Filter items by labels.
 
 ## Installation
 
-1. Add the repository to HACS.
+1. Add this repository to HACS as a custom repository.
 2. Install the integration via HACS.
-3. Configure the integration in Home Assistant.
+3. Add the custom card to Lovelace.
 
-## Usage
+## Configuration
 
-- Add items to your catalog using the provided services.
-- Display the catalog in Lovelace using the custom card.
-- Filter items by labels and add them to your Whole Foods cart.
+- **Services**: Use the provided services to add or remove items from the catalog.
+- **Lovelace**: Use the custom Lovelace card to display the catalog and interact with items.
 
-Lovelace Integration:
-```
+## Example Lovelace Configuration
+
+```yaml
 resources:
   - url: /hacsfiles/wholefoods_shopping_list/wholefoods-catalog-card.js
     type: module
@@ -26,5 +33,3 @@ views:
       - type: custom:wholefoods-catalog-card
         entity: sensor.whole_foods_catalog
         label_filter: ["organic"]
-
-```
