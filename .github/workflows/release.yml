@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -21,6 +22,10 @@ jobs:
           release_name: ${{ github.ref }}
           draft: false
           prerelease: false
+
+      - name: Create Zip File
+        run: zip -r wholefoods_shopping_list.zip . -x "node_modules/*"
+
       - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
         env:
