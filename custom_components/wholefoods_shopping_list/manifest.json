@@ -1,0 +1,12 @@
+{
+    "domain": "wholefoods_shopping_list",
+    "name": "Whole Foods Shopping List",
+    "version": "1.0",
+    "documentation": "https://github.com/EvanSchalton/hacs-wholefoods-shopping-list",
+    "dependencies": [],
+    "codeowners": [
+        "@EvanSchalton"
+    ],
+    "requirements": [],
+    "iot_class": "cloud_polling"
+}

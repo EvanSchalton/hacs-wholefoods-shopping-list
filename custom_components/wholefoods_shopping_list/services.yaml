@@ -1,0 +1,22 @@
+add_item_to_catalog:
+  description: "Add an item to the Whole Foods catalog"
+  fields:
+    name:
+      description: "Name of the product"
+      example: "Organic Avocados"
+    product_number:
+      description: "Product number"
+      example: "12345"
+    image_url:
+      description: "URL to the product image"
+      example: "https://example.com/avocados.jpg"
+    labels:
+      description: "Arbitrary labels"
+      example: ["organic", "fruit"]
+
+remove_item_from_catalog:
+  description: "Remove an item from the Whole Foods catalog"
+  fields:
+    product_number:
+      description: "Product number"
+      example: "12345"

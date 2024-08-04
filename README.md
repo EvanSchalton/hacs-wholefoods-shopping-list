@@ -1,1 +1,0 @@
-# homeassistant_wholefoods_shopping_list
