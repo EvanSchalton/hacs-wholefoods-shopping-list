@@ -8,5 +8,11 @@
         "@EvanSchalton"
     ],
     "requirements": [],
-    "iot_class": "cloud_polling"
+    "iot_class": "cloud_polling",
+    "resources": [
+        {
+            "type": "module",
+            "url": "/hacsfiles/wholefoods_shopping_list/wholefoods-catalog-card.js"
+        }
+    ]
 }

@@ -33,3 +33,4 @@ views:
       - type: custom:wholefoods-catalog-card
         entity: sensor.whole_foods_catalog
         label_filter: ["organic"]
+```
