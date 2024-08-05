@@ -7,9 +7,9 @@
 │       ├── manifest.json
 │       ├── sensor.py
 │       └── services.yaml
+├── dist
+│   └── wholefoods-catalog-card.js
 ├── info.md
-├── tree.txt
-└── www
-    └── wholefoods-catalog-card.js
+└── tree.txt
 
 3 directories, 9 files
